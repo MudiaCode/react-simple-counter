@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap");
 
-
 * {
   background-color: #282a36;
   overflow: hidden;
@@ -65,6 +64,10 @@ span {
 
 img {
   width: 10rem;
+  margin: auto;
+  display: block;
+  filter: brightness(0) invert(1);
+  background: transparent;
 }
 
 .foo {

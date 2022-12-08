@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
-import ArrowL from "./images/arrow-left-round-24px.svg";
-import ArrowR from "./images/arrow-right-round-24px.svg";
+import ArrowU from "./images/arrow-drop-down-round-24px.svg";
+import ArrowD from "./images/arrow-drop-up-round-24px.svg";
 
 function App() {
   return (
@@ -42,13 +42,10 @@ function Counter() {
 
   return (
     <>
-      <div className="counter">
-        <img src={ArrowL} alt="arrow-l" onClick={decrement}></img>
-        <div className="count">
-          <span>{count}</span>
-        </div>
-
-        <img src={ArrowR} alt="arrow-r" onClick={increment}></img>
+      <div>
+        <img src={ArrowD} alt="arrow-d" onClick={increment}></img>
+        <span>{count}</span>
+        <img src={ArrowU} alt="arrow-u" onClick={decrement}></img>
       </div>
       <div className="reset">
         <button className="reset-button" onClick={reset}>
