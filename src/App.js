@@ -66,3 +66,5 @@ function Footer() {
 }
 
 export default App;
+
+//TODO: useState condition (when larger than 0 disable button)
